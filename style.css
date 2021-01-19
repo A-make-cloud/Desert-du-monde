@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: #e2e2e2;
+    width: contain;
+}
+h1{
+    font-size: 150%;
+    color: #a55122;
+}
+h2{
+    font-size: 150%;
+}
+h3{
+    font-size: 150%;
+    color: #2f0700;
+}
+header, main, footer{
+    background-color: white;
+    width: 960px;
+    margin: auto;
+}
+
+/*header  */
+header{
+    display: flex;
+    align-items: center;
+    padding: 15px 35px 49px 28px;
+   
+    
+}
+nav{
+    text-transform: uppercase;
+    margin-left: 200px;
+   
+}
+nav a{color:black;
+font-weight: 500;
+padding: 5px;}
+.main{
+    padding-left: 35px;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap:0 25px;
+    /* grid-template-columns:449px 183px 280px; */
+    /* grid-template-areas: "gauche gauche droite""gauche gauche droite""gauche gauche droite"; */
+}
+/*  gauche et droite*/
+/* .gauche{grid-area: gauche;}
+.droite{grid-area: droite;} */
+
+.gauche img{
+    width: 100%;
+}
+
+/*aside */
+
+ol{
+    margin-left: 20px;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    padding: 30px;
+}
+
+/*  mobil  */
+
+@media only screen and (min-width:320px) and (max-width:540px){
+    header{
+        display: block;
+        
+    }
+    
+    nav{
+        
+        background-color: #e2e2e2;
+        padding: 40px 60px 40px 60px;
+        border: 4px solid white;
+       width: 30%;
+       text-align: center;
+        margin-left: 0;
+      
+    }
+    a{
+        display: block;
+    }
+    .gauche{
+        width: 40%;
+    }
+   
+    img{
+        max-width: 300px;
+      
+        
+    }
+    p{
+        font-size: 80%;
+    }
+    aside{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:550px) and (max-width:720px){
+    header{
+        display: block;
+
+}
+header img{
+    margin-left: 200px;
+}
+header h1{
+    margin-left: 150px;
+}
+nav{
+    justify-content: space-around;
+    margin-left: 10px;
+   width: 60%;
+    display: flex;
+    background-color: #e2e2e2;
+    padding: 20px 60px 20px 60px;
+    text-align: left;
+}
+.gauche{
+    height: 30%;
+ 
+}
+.droite{
+    display: flex;justify-content: space-around;margin-top: 50px;
+}
+.main{
+    padding-left: 35px;
+    display: grid;
+    grid-template-columns:120px 20px 380px;
+    grid-template-areas: "gauche gauche gauche""gauche gauche gauche""droite droite droite";
+}
+footer{
+    text-align: center;
+    width: 65%;
+}
+
+}
+@media only screen and (min-width:720px) and (max-width:960px){
+
+}
+
+/* $container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+); */
